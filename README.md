@@ -13,22 +13,26 @@
 First, ensure you have Go installed on your system. Then, you can install the `drcode` package using `go get`:
 
 ```bash
-go get github.com/codewithnadeem14502/DrCode-go-package
+go get github.com/airia-in/DrCode-go-package
 ```
+
 Import the package into your Go project:
 
 ```bash
-import drcode "github.com/codewithnadeem14502/DrCode-go-package"
+import drcode "github.com/airia-in/DrCode-go-package"
 ```
+
 ## Usage
+
 ### 1. Initialize Error Tracking
+
 Before using any error handling or reporting functions, you must initialize your error tracking service with your project ID and public key.
 
-```bash 
+```bash
 package main
 import (
     "log"
-    drcode "github.com/codewithnadeem14502/DrCode-go-package"
+    drcode "github.com/airia-in/DrCode-go-package"
 )
 func main() {
     err := drcode.Initialize("your-project-id", "your-public-key")
@@ -40,15 +44,16 @@ func main() {
 ```
 
 ## 2. Panic Handling Middleware
+
 Use the ErrorHandler middleware to automatically capture and report panics in your HTTP handlers.
 
-``` bash
+```bash
 package main
 
 import (
     "net/http"
 
-    drcode "github.com/codewithnadeem14502/DrCode-go-package"
+    drcode "github.com/airia-in/DrCode-go-package"
 )
 
 func main() {
@@ -74,8 +79,8 @@ func main() {
 ```
 
 ## 3. Manual Error Reporting
- You can manually report errors to your error tracking service using the ReportError function.
 
+You can manually report errors to your error tracking service using the ReportError function.
 
 ```bash
 package main
@@ -84,7 +89,7 @@ import (
     "fmt"
     "net/http"
 
-    drcode "github.com/codewithnadeem14502/DrCode-go-package"
+    drcode "github.com/airia-in/DrCode-go-package"
 )
 
 func main() {
@@ -107,4 +112,5 @@ func main() {
 ```
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
