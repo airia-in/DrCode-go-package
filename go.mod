@@ -1,4 +1,4 @@
-module github.com/codewithnadeem14502/DrCode-go-package
+module github.com/airia-in/DrCode-go-package
 
 go 1.22.5
 
