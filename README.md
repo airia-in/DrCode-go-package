@@ -13,13 +13,13 @@
 First, ensure you have Go installed on your system. Then, you can install the `drcode` package using `go get`:
 
 ```bash
-go get github.com/airia-in/DrCode-go-package
+go get github.com/airia-in/drcode_go
 ```
 
 Import the package into your Go project:
 
 ```bash
-import drcode "github.com/airia-in/DrCode-go-package"
+import drcode "github.com/airia-in/drcode_go"
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Before using any error handling or reporting functions, you must initialize your
 package main
 import (
     "log"
-    drcode "github.com/airia-in/DrCode-go-package"
+    drcode "github.com/airia-in/drcode_go"
 )
 func main() {
     err := drcode.Initialize("your-project-id", "your-public-key")
@@ -53,7 +53,7 @@ package main
 import (
     "net/http"
 
-    drcode "github.com/airia-in/DrCode-go-package"
+    drcode "github.com/airia-in/drcode_go"
 )
 
 func main() {
@@ -89,7 +89,7 @@ import (
     "fmt"
     "net/http"
 
-    drcode "github.com/airia-in/DrCode-go-package"
+    drcode "github.com/airia-in/drcode_go"
 )
 
 func main() {

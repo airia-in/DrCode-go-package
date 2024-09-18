@@ -1,4 +1,4 @@
-module github.com/airia-in/DrCode-go-package
+module github.com/airia-in/drcode_go
 
 go 1.22.5
 
